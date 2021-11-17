@@ -1,5 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#page-container{
+    min-height: 100vh;
+}
+
+
+/* FLEX */
+body{
+    background-color: rgb(44, 44, 44);
+    font-family: 'Shippori Antique', sans-serif;
+}
+
 h1{
     margin-top: 25px;
+    color: white;
+}
+
+div{
+    border-radius: 5px;
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+a h1{
+    margin: 30px;
+}
+
+a{
+    text-underline-offset: 5px;
+    text-decoration-color: orange;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+.base{
+    margin: 10px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: rgb(255, 174, 0, 50%);
+    border: orange solid 3px;
+    transition: 0.3s;
 }
 
 .end{
@@ -11,13 +72,6 @@ h1{
     justify-content: flex-end;
 }
 
-.end div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(201, 201, 201);
-    margin: 10px;
-}
-
 .start{
     width: 100%;
     height: fit-content;
@@ -25,13 +79,6 @@ h1{
     flex-direction: row;
     background-color: black;
     justify-content: flex-start;
-}
-
-.start div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(201, 201, 201);
-    margin: 10px;
 }
 
 .sa{
@@ -43,13 +90,6 @@ h1{
     justify-content: space-around;
 }
 
-.sa div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(201, 201, 201);
-    margin: 10px;
-}
-
 .sb{
     width: 100%;
     height: fit-content;
@@ -57,13 +97,6 @@ h1{
     flex-direction: row;
     background-color: black;
     justify-content: space-between;
-}
-
-.sb div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(201, 201, 201);
-    margin: 10px;
 }
 
 .se{
@@ -75,9 +108,28 @@ h1{
     justify-content: space-evenly;
 }
 
-.se div{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(201, 201, 201);
-    margin: 10px;
+/* GRID */
+
+.grid1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 398px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 700px){
+
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+
 }
